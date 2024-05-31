@@ -1,4 +1,4 @@
-# whether
+# whether one
 def check_voting_age(age):
     if age >= 18:
         print("You are old enough to vote!")
