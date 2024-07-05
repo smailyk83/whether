@@ -1,16 +1,15 @@
 # whether one
-def check_voting_age(age):
-    if age >= 18:
-        print("You are old enough to vote!")
+def check_even_odd(number):
+    if number % 2 == 0:
+        return "Число чётное"
     else:
-        print("You are not old enough to vote yet.")
+        return "Число нечётное"
 
-def main():
-    try:
-        age = int(input("Please enter your age: "))
-        check_voting_age(age)
-    except ValueError:
-        print("Invalid input. Please enter a valid age.")
+# Getting a number from the user
+try:
+    user_input = int(input("Введите число: "))
+    result = check_even_odd(user_input)
+    print(result)
+except ValueError:
+    print("Пожалуйста, введите целое число.")
 
-if __name__ == "__main__":
-    main()
